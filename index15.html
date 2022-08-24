@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="tr">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style14.css">
+    <title>15</title>
+
+    <!-- slick.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+</head>
+
+
+<body>
+
+    <div class="container" id="galeri">
+        <div class="row " id="acilisekrani">
+            <div class="col-sm-12 col-lg-6 etkinlik" id="etkinlik1">
+                <div class="anaresim" id="ana1">
+                    <img src="galeri/ana1.jpeg" alt="etkinlik1">
+                    <div class="content">
+                        <h4>Coffee&Talk Etkinliği</h4>
+                        <span>Yazılımcı; kahveyi koda çeviren organizma.</span><br>
+                        <span class="tarih">28 Mayıs 2022</span>
+                        <button onclick="DahaFazla(etkinlik1)">Daha Fazla</button>
+                    </div>
+                </div>
+                <div class="geriplan" id="geriplan1">
+                    <i class="fa-solid fa-circle-xmark" onclick="KapatmaButonu(etkinlik1)"></i>
+                    <img src="galeri/ana1.jpeg" alt="" onclick="Slider(etkinlik1,ana1_1)">
+                    <img src="galeri/geriplan1.1.jpeg" alt="" onclick="Slider(etkinlik1,geri1_1)">
+                    <img src="galeri/geriplan1.3.jpeg" alt="" onclick="Slider(etkinlik1,geri1_2)">
+                    <img src="galeri/resim4.jpeg" alt="" onclick="Slider(etkinlik1,geri1_3)">
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 etkinlik" id="etkinlik2">
+                <div class="anaresim" id="ana2">
+                    <img src="galeri/ana2.jpeg" alt="">
+                    <div class="content">
+                        <h4>Android Mobil Uygulama Geliştirme Etkinliği</h4>
+                        <span>...</span><br>
+                        <span class="tarih">23 Mayıs 2022</span>
+                        <button onclick="DahaFazla(etkinlik2)">Daha Fazla</button>
+                    </div>
+                </div>
+                <div class="geriplan" id="geriplan2">
+                    <i class="fa-solid fa-circle-xmark" onclick="KapatmaButonu(etkinlik2)"></i>
+                    <img src="galeri/ana2.jpeg" alt="" onclick="Slider(etkinlik2,ana2_1) ">
+                    <img src="galeri/geriplan2.1.jpeg" alt="" onclick="Slider(etkinlik2,geri2_1)">
+                    <img src="galeri/resim2.jpeg" alt="" onclick="Slider(etkinlik2,geri2_2)">
+                    <img src="galeri/geriplan2.3.jpeg" alt="" onclick="Slider(etkinlik2,geri2_3)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="Sliderbar">
+        <div class="row">
+            <div class="col-sm-12 etkinlikslider" id="etkinlik1slider">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner geriplan-slider">
+                        <div class="carousel-item active" id="ana1_1">
+                            <img src="galeri/ana1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" id="geri1_1">
+                            <img src="galeri/geriplan1.1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" id="geri1_2">
+                            <img src="galeri/geriplan1.3.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" id="geri1_3">
+                            <img src="galeri/geriplan1.4.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
+                <button>
+                    <i class="fa-solid fa-circle-xmark" onclick="KapatmaButonuSlider(etkinlik1)"></i>
+                </button>
+            </div>
+            <div class="col-sm-12 etkinlikslider" id="etkinlik2slider">
+                <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner geriplan-slider">
+                        <div class="carousel-item active2" id="ana2_1">
+                            <img src="galeri/ana2.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" id="geri2_1">
+                            <img src="galeri/geriplan2.1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" id="geri2_2">
+                            <img src="galeri/geriplan2.2.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" id="geri2_3">
+                            <img src="galeri/geriplan2.3.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls2"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls2"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
+                <button>
+                    <i class="fa-solid fa-circle-xmark" onclick="KapatmaButonuSlider(etkinlik2)"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- slick.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script>
+        $('.geriplan-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    </script>
+
+
+    <script>
+        function DahaFazla(deger){
+            if (deger == etkinlik1)
+            {
+                document.querySelector("#ana1").style.display= "none";
+                document.querySelector("#geriplan1").style.display= "block";
+                document.querySelector("#ana2").style.display="block";
+                document.querySelector("#geriplan2").style.display="none";
+            }
+            else if (deger == etkinlik2) 
+            {
+                document.querySelector("#ana2").style.display= "none";
+                document.querySelector("#geriplan2").style.display= "block";
+                document.querySelector("#ana1").style.display="block";
+                document.querySelector("#geriplan1").style.display="none";
+            }
+        }
+
+        function KapatmaButonu(deger)
+        { 
+            if(deger == etkinlik1)
+            {
+                document.querySelector("#ana1").style.display="block";
+                document.querySelector("#geriplan1").style.display="none";
+            }
+            else if(deger == etkinlik2)
+            {
+                document.querySelector("#ana2").style.display="block";
+                document.querySelector("#geriplan2").style.display="none";
+            }
+        }
+        /* 
+        function Slider(etkinlik,resim)
+        {
+            console.log(resim)
+            document.querySelector("#acilisekrani").style.display="none";
+            if(etkinlik==etkinlik1)
+            {
+                document.querySelector("#etkinlik1slider").style.display="block";
+                let greeting_silme = document.querySelector(".active");
+                greeting_silme.classList.remove("active");
+
+                if(resim == ana1_1)
+                {
+                    let greeting_ekleme = document.querySelector("#ana1_1");
+                    greeting_ekleme.classList.add("active");
+                }
+                else if(resim == geri1_1)
+                {
+                    let greeting_ekleme = document.querySelector("#geri1_1");
+                    greeting_ekleme.classList.add("active");
+                }
+                else if( resim == geri1_2)
+                {
+                    let greeting_ekleme = document.querySelector("#geri1_2");
+                    greeting_ekleme.classList.add("active");
+                }
+                else if( resim == geri1_3)
+                {
+                    let greeting_ekleme = document.querySelector("#geri1_3");
+                    greeting_ekleme.classList.add("active");
+                }
+            }
+            else if(etkinlik==etkinlik2)
+            {
+                document.querySelector("#etkinlik2slider").style.display="block";
+                let greeting_silme= document.querySelector(".active");
+                greeting_silme.classList.remove("active");
+                if ( resim == ana2_1)
+                {
+                    let greeting_ekleme = document.querySelector("#ana2_1");
+                    greeting_ekleme.classList.add("active");
+                }
+                else if(resim == geri2_1)
+                {
+                    let greeting_ekleme = document.querySelector("#geri2_1");
+                    greeting_ekleme.classList.add("active");
+                }
+                else if(resim == geri2_2)
+                {
+                    let greeting_ekleme = document.querySelector("#geri2_2");
+                    greeting_ekleme.classList.add("active");
+                }
+                else if(resim == geri2_3)
+                {
+                    let greeting_ekleme = document.querySelector("#geri2_3");
+                    greeting_ekleme.classList.add("active");
+                }
+            }
+
+        }
+       */
+        function KapatmaButonuSlider(deger)
+        {
+            document.querySelector("#acilisekrani").style.display="flex";
+            if(deger == etkinlik1)
+            {
+                document.querySelector("#etkinlik1slider").style.display="none";
+            }
+            else if (deger == etkinlik2)
+            {
+                document.querySelector("#etkinlik2slider").style.display="none";
+            }
+        }
+    </script> 
+    <script src="https://kit.fontawesome.com/6a28faa957.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
